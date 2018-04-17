@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+    <!--firebase database below-->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <title>Sunshine</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-dark bg-dark">
+        <div class="container">
+            <div class="header">
+                <button type="button" class="btn" data="navBtn">
+                    <span class="icon"></span>
+                    <span class="icon"></span>
+                    <span class="icon"></span>
+                </button>
+                <a class="navImg" href="#">
+                    <img src="">
+                </a>
+            </div>
+            <div class="navBarBtn" id="headerNav">
+                <ul class="navList">
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="search.html"></a>Search</li>
+                    <li>
+                        <a href="links.html"></a>Activities</li>
+                    <li>
+                        <a href="login.html"></a>Login</li>
+                    <li>
+                        <a href="sign.html"></a>Sign-Up</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="textContainer">
+        <h1>What we have</h1>
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="" id="textIcon">
+                <h2>Study Flashcards</h2>
+            </div>
+            <div class="col-sm-4">
+                <img src="" id="textIcon">
+                <h2>Vocabulary</h2>
+            </div>
+            <div class="col-sm-4">
+                <img src="" id="textIcon">
+                <h2>Quizzes</h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
