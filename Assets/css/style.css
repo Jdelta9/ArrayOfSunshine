@@ -10,6 +10,7 @@ body {
     padding: 1% 0;
     font-size: 1px;
 }
+
 .nav-link {
     font-size: 20px;
     color: white;
@@ -20,17 +21,20 @@ body {
     display: block;
     text-decoration: none;
 }
+
 .screen {
     background: url('../images/images-1.jpg');
     height: 100%;
     width: 100%;
-    background-size: cover;
+	background-size: cover;
+	padding-top: 95px;
 }
 .screen-flashcards{
 	background: url('../images/skyblue.jpg');
     height: 100%;
     width: 100%;
-    background-size: cover;
+	background-size: cover;
+	padding-top: 95px;
 }
 .icon-bar {
     color:#FFF;
@@ -42,18 +46,116 @@ footer {
     color: white;
     padding-top: 2rem;
 }
+
 hr.light {
     border-top: 1px solid white;
     width: 75%;
     margin-top: .8rem;
     margin-bottom: 1rem;
 }
+
 footer a {
     color: white;
 }
+
 hr.light-100 {
     border-top: 1px solid white;
     width: 100%;
     margin-top: .8rem;
     margin-bottom: 1rem;
+}
+
+/* card styles */
+
+#stack {
+  float: right;
+  margin-right: 5px;
+  position: relative;
+  width: 600px;
+  margin-top: 8%;
+}
+
+.card {
+  border: 1px solid #888;
+  position: absolute;
+  width: 600px;
+  height: 360px;
+  transform-origin: 0% 0%;
+}
+
+.card .front {
+  background: white;
+  font-size: 24pt;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  text-align: center;
+  padding: 78px;
+}
+
+.card .back {
+  background: white linear-gradient(transparent, transparent 20%, hotpink 20%, hotpink 21%, transparent 21%, transparent 31%, lightblue 31%, lightblue 32%, transparent 32%, transparent 42%, lightblue 42%, lightblue 43%, transparent 43%, transparent 53%, lightblue 53%, lightblue 54%, transparent 54%, transparent 64%, lightblue 64%, lightblue 65%, transparent 65%, transparent 75%, lightblue 75%, lightblue 76%, transparent 76%, transparent 86%, lightblue 86%, lightblue 87%, transparent 87%, transparent 97%);
+  font-size: 18pt;
+  position: absolute;
+  width: 600px;
+  height: 360px;
+  transform: rotateY(180deg);
+  z-index: 1;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 78px;
+}
+
+._1 {
+  top: 0px;
+  right: 0px;
+  z-index: 3;
+}
+
+._2 {
+  top: 3px;
+  right: 2px;
+  z-index: 2;
+}
+
+._3 {
+  top: 6px;
+  right: 4px;
+  z-index: 1;
+}
+
+._4 {
+  top: 9px;
+  right: 6px;
+  z-index: 0;
+}
+
+.flipped {
+  transform: rotateY(180deg) translateX(30px);
+  animation: flip 1s;
+}
+
+.showingBack {
+  animation: showBack 1s;
+}
+
+@keyframes flip {
+  from {
+    transform: rotateY(0deg) translateX(0px);
+  }
+  to {
+    transform: rotateY(180deg) translateX(30px);
+  }
+}
+@keyframes showBack {
+  0% {
+    z-index: 2;
+  }
+  25% {
+    z-index: 2;
+  }
+  50% {
+    z-index: 0;
+  }
 }
