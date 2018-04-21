@@ -23,12 +23,13 @@ body {
 }
 
 .screen {
-    background: url('../images/images-1.jpg');
+    background: url('../images/sunset.jpg');
     height: 100%;
     width: 100%;
 	background-size: cover;
 	padding-top: 95px;
 }
+
 .screen-flashcards{
 	background: url('../images/skyblue.jpg');
     height: 100%;
@@ -36,6 +37,7 @@ body {
 	background-size: cover;
 	padding-top: 95px;
 }
+
 .icon-bar {
     color:#FFF;
     margin: 1px 1px 1px 1px;
@@ -72,7 +74,7 @@ hr.light-100 {
   margin-right: 5px;
   position: relative;
   width: 600px;
-  margin-top: 8%;
+  margin-top: 15px;
 }
 
 .card {
@@ -158,4 +160,16 @@ hr.light-100 {
   50% {
     z-index: 0;
   }
+}
+
+.weather{
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	font-size: 70px;
+	margin-top: 8%;
+}
+
+.textContainer{
+	text-align: center;
 }

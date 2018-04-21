@@ -25,7 +25,6 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse-main">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html">Home</a></li>
                 <li><a class="nav-link" href="index.html">Home</a></li>
                 <li><a class="nav-link" href="flashcard.html">Flashcards</a></li> 
             </ul>
@@ -34,16 +33,11 @@
     </div>
 </nav>
 <div class="screen">
-</div>
-    <div class="textContainer">
-        <div class="row">
-            <div class="col-sm-4">
-                <img src="" id="textIcon">
-                <h1>Study Flashcards</h1>
-                <p>Flashcards that help to memorize new words with definitions.</p>
-            </div>
-        </div>
+    <div class="weather">
+        <div id="weather-city"></div>
+        <div id="weather-temperature"></div>
     </div>
+</div>
 <footer>
     <div class="container-fluid padding">
         <div class="row text-center">
@@ -66,24 +60,7 @@
     </div>
 </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="Assets/javascript/app.js"></script>
-    <script type="text/javascript">
-
-        $("button").on("click", function () {
-
-            var card = $(this).attr("data-type");
-
-            var queryURL = "https://api.quizlet.com/2.0/sets/415?client_id=YsXRxqTTG9&whitespace=1&api_key=q4u76UFVbdrrbbaCJYZDvP&limit=1";
-
-            $.ajax({
-                url: queryURL,
-                method: 'GET'
-            }).then(function (response) {
-                console.log(response);
-            })
-        })
-
-    </script>
+    <script src="Assets/javascript/app-weather.js"></script>
 </body>
 
 </html>

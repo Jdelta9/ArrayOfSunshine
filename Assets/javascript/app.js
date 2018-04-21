@@ -11,7 +11,7 @@ $(function () {
 
 
   function processData(response){
-    console.log(response);
+
     var stack = $('#stack');
     var results = response.results;
     var card_top = 0;
@@ -62,5 +62,9 @@ $(function () {
     return card;
   }
 
+
+
+
+  
 
 });
