@@ -1,52 +1,53 @@
 html,
 body {
-   height: 100%;
-   width: 100%;
-   font-family: Arial, Helvetica, sans-serif;
-   color: black;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
 
 .navbar {
-   padding: 1% 0;
-   font-size: 1px;
+    padding: 1% 0;
+    font-size: 1px;
 }
 .nav-link {
-   font-size: 20px;
-   color: white;
+    font-size: 20px;
+    color: white;
 }
 
 .navbar-default .navbar-nav li a {
-   color: white;
-   display: block;
-   text-decoration: none;
+    color: white;
+    display: block;
+    text-decoration: none;
 }
 .screen {
-   height: 100%;
-   width: 100%;
-   background-size: cover;
+    background: url(ArrayOfSunshine/Assets/images/sunshine/image-5.jpeg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
 }
 .icon-bar {
-   color:#FFF;
-   margin: 1px 1px 1px 1px;
+    color:#FFF;
+    margin: 1px 1px 1px 1px;
 }
 
 footer {
-   background: grey;
-   color: white;
-   padding-top: 2rem;
+    background: grey;
+    color: white;
+    padding-top: 2rem;
 }
 hr.light {
-   border-top: 1px solid white;
-   width: 75%;
-   margin-top: .8rem;
-   margin-bottom: 1rem;
+    border-top: 1px solid white;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
 }
 footer a {
-   color: white;
+    color: white;
 }
 hr.light-100 {
-   border-top: 1px solid white;
-   width: 100%;
-   margin-top: .8rem;
-   margin-bottom: 1rem;
+    border-top: 1px solid white;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
 }
