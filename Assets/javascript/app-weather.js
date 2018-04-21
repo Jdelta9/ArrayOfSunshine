@@ -10,7 +10,7 @@ $(function () {
   });
 
   function processData(response){
-    console.log(response);
+
     var city = $('#weather-city');
     var temperature = $('#weather-temperature');
 
