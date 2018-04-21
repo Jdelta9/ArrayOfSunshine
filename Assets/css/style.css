@@ -21,7 +21,13 @@ body {
     text-decoration: none;
 }
 .screen {
-    background: url(ArrayOfSunshine/Assets/images/sunshine/image-5.jpeg);
+    background: url('../images/images-1.jpg');
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+.screen-flashcards{
+	background: url('../images/skyblue.jpg');
     height: 100%;
     width: 100%;
     background-size: cover;
